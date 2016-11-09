@@ -1,9 +1,11 @@
+#include "implementation.h"
+
+
 #include <vector>
 #include <list>
 
 #include <catch.hpp>
 
-#include "implementation.h"
 
 TEST_CASE("size of vector", "[container_wrapper]")
 {
