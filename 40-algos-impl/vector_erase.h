@@ -11,13 +11,3 @@ void vector_erase(T & vector, const typename T::value_type & value )
 }
 
 
-template<typename T, typename Alloc>
-void vector_erase(T vector, int n )
-{
-	int size = vector.size();
-	for(int i = 0; i < size; i++)
-	{ 		
-		auto it = find_if(vector.begin(), vector.end(), [&n](auto elem){ return elem == n;});
-		if(it != vector.end()) vector.erase(it);
-	}
-}
